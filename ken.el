@@ -31,8 +31,8 @@
 ;;======== FONT =========
 (when (eq system-type 'darwin)
       ;; default Latin font (e.g. Consolas)
-      (set-face-attribute 'default nil :family "Anonymous Pro")
-;;     (set-face-attribute 'default nil :family "Monaco")
+;;      (set-face-attribute 'default nil :family "Anonymous Pro")
+     (set-face-attribute 'default nil :family "Monaco")
 
       ;; default font size (140)
       ;;
@@ -134,6 +134,19 @@
 ;;========== SMARTPARENS =========
 (require 'smartparens-config)
 (smartparens-global-mode)
+(require 'smartparens-lua)
+
+
+(sp-with-modes '(lua-mode)
+ (sp-local-pair "for" nil :actions :rem)
+ (sp-local-pair "if" nil :actions :rem)
+ (sp-local-pair "while" nil :actions :rem)
+ (sp-local-pair "function" nil :actions :rem)
+ )
+;;(sp-local-pair 'lua-mode "for" nil :actions :rem)
+;;(sp-local-pair 'lua-mode "if" nil :actions :rem)
+;;(sp-local-pair 'lua-mode "while" nil :actions :rem)
+;;(sp-local-pair 'lua-mode "function" nil :actions :rem)
 
 ;;========== TABBAR ==========
 (require 'tabbar)
