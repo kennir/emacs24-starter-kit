@@ -31,15 +31,15 @@
 ;;======== FONT =========
 (when (eq system-type 'darwin)
       ;; default Latin font (e.g. Consolas)
-;;      (set-face-attribute 'default nil :family "Anonymous Pro")
-     (set-face-attribute 'default nil :family "Monaco")
+      (set-face-attribute 'default nil :family "Anonymous Pro")
+;;     (set-face-attribute 'default nil :family "Monaco")
 
       ;; default font size (140)
       ;;
       ;; WARNING!  Depending on the default font,
       ;; if the size is not supported very well, the frame will be clipped
       ;; so that the beginning of the buffer may not be visible correctly. 
-      (set-face-attribute 'default nil :height 140)
+      (set-face-attribute 'default nil :height 160)
 
       ;; use specific font for Korean charset.
       ;; if you want to use different font size for specific charset,
@@ -423,5 +423,7 @@
                         (quote ((fullscreen . maximized))) )) 
 
 
+;;========= 回车自动缩进 =========
+(global-set-key (kbd "RET") 'newline-and-indent)
 
 
