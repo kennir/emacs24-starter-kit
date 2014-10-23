@@ -402,21 +402,21 @@
 
 ;;======== ECB ========
 ;;(require 'ecb)
-(require 'ecb-autoloads)
-(setq ecb-tip-of-the-day nil)
-(define-key global-map [(f3)] 'ecb-goto-window-directories)
-(define-key global-map [(f4)] 'ecb-goto-window-sources)
-(define-key global-map [(f5)] 'ecb-goto-window-methods)
-(define-key global-map [(f6)] 'ecb-goto-window-history)
+;;(require 'ecb-autoloads)
+;;(setq ecb-tip-of-the-day nil)
+;;(define-key global-map [(f3)] 'ecb-goto-window-directories)
+;;(define-key global-map [(f4)] 'ecb-goto-window-sources)
+;;(define-key global-map [(f5)] 'ecb-goto-window-methods)
+;;(define-key global-map [(f6)] 'ecb-goto-window-history)
 
 ;;;; 隐藏和显示ecb窗口
-(define-key global-map [(control f1)] 'ecb-hide-ecb-windows)
-(define-key global-map [(control f2)] 'ecb-show-ecb-windows)
-
-(global-set-key [M-left]  'windmove-left)
-(global-set-key [M-right] 'windmove-right)
-(global-set-key [M-up]    'windmove-up)
-(global-set-key [M-down]  'windmove-down)
+;;(define-key global-map [(control f1)] 'ecb-hide-ecb-windows)
+;;(define-key global-map [(control f2)] 'ecb-show-ecb-windows)
+;;
+;;(global-set-key [M-left]  'windmove-left)
+;;(global-set-key [M-right] 'windmove-right)
+;;(global-set-key [M-up]    'windmove-up)
+;;(global-set-key [M-down]  'windmove-down)
 
 ;; 开启后最大化窗口
 (custom-set-variables '(initial-frame-alist 
