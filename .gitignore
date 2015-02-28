@@ -51,3 +51,7 @@ secret.org
 .emacs.desktop*
 .*~
 agent/*
+/projectile-bookmarks.eld
+/projectile.cache
+/request/
+/smex-items
