@@ -1,0 +1,2 @@
+(require 'fill-column-indicator)
+(add-hook 'lua-mode-hook 'fci-mode)

@@ -1,0 +1,1 @@
+(require 'chinese-fonts-setup)

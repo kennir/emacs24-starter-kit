@@ -4,7 +4,7 @@
 ## misc
 loaddefs.el*
 auto-save-list
-custom.el
+##custom.el
 places
 .svn
 .DS_Store
@@ -25,7 +25,7 @@ url/*
 
 ## exported and encrypted files
 *gpg
-*el
+##*el
 *elc
 *html
 *tex
